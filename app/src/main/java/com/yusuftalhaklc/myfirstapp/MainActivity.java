@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
     }
     public void operations(String operationName,View view){
         try {
-            if(!number1Text.getText().toString().matches("") || !number2Text.getText().toString().matches("")) {
+            if(!number1Text.getText().toString().matches("") && !number2Text.getText().toString().matches("")) {
                 int num1 = Integer.parseInt(number1Text.getText().toString());
                 int num2 = Integer.parseInt(number2Text.getText().toString());
                 int result;
