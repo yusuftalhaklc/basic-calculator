@@ -37,24 +37,21 @@ public class MainActivity extends AppCompatActivity {
                 switch (operationName) {
                     case "sum":
                         result = num1 + num2;
-                        resultText.setText("Result : " + result);
                         break;
 
                     case "deduct":
                         result = num1 - num2;
-                        resultText.setText("Result : " + result);
                         break;
 
                     case "multiply":
                         result = num1 * num2;
-                        resultText.setText("Result : " + result);
                         break;
 
                     case "divide":
                         result = num1 / num2;
-                        resultText.setText("Result : " + result);
                         break;
                 }
+                 resultText.setText("Result : " + result);
             }
             else{
                 resultText.setText("Error!");
